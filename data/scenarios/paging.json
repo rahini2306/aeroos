@@ -1,0 +1,22 @@
+{
+  "mode": "paging",
+  "algorithm": "lru",
+  "frames": 3,
+  "page_size": 256,
+  "references": [
+    7,
+    0,
+    1,
+    2,
+    0,
+    3,
+    0,
+    4,
+    2,
+    3,
+    0,
+    3,
+    2
+  ],
+  "logical_address": 512
+}

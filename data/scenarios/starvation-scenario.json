@@ -1,0 +1,302 @@
+{
+  "name": "Starvation Scenario",
+  "seed": 42,
+  "context": "tasks",
+  "algorithm": "priority",
+  "quantum": 2,
+  "aging": false,
+  "aging_interval": 5,
+  "starvation_threshold": 15,
+  "resources": {
+    "runways": 3,
+    "gates": 6,
+    "baggage": 4,
+    "maintenance": 3,
+    "fuel": 2,
+    "crew": 5,
+    "memory": 1024,
+    "max_flights": 100,
+    "runway_classes": [
+      "all",
+      "all",
+      "all"
+    ],
+    "gate_classes": [
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "all"
+    ]
+  },
+  "flights": [
+    {
+      "id": "AI200",
+      "airline": "Air India",
+      "category": "heavy",
+      "arrival": 0,
+      "departure": 70,
+      "burst": 30,
+      "priority": 9,
+      "emergency": false,
+      "memory": 96,
+      "requirements": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "6E213",
+      "airline": "IndiGo",
+      "category": "medium",
+      "arrival": 0,
+      "departure": 58,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 32,
+      "requirements": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "EK226",
+      "airline": "Emirates",
+      "category": "medium",
+      "arrival": 1,
+      "departure": 73,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 96,
+      "requirements": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "SQ239",
+      "airline": "Singapore Airlines",
+      "category": "medium",
+      "arrival": 2,
+      "departure": 63,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 32,
+      "requirements": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "UK252",
+      "airline": "Vistara",
+      "category": "medium",
+      "arrival": 3,
+      "departure": 56,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 96,
+      "requirements": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "AI265",
+      "airline": "Air India",
+      "category": "heavy",
+      "arrival": 4,
+      "departure": 56,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 32,
+      "requirements": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "6E278",
+      "airline": "IndiGo",
+      "category": "medium",
+      "arrival": 5,
+      "departure": 64,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 32,
+      "requirements": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "EK291",
+      "airline": "Emirates",
+      "category": "medium",
+      "arrival": 6,
+      "departure": 74,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 96,
+      "requirements": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "SQ304",
+      "airline": "Singapore Airlines",
+      "category": "medium",
+      "arrival": 7,
+      "departure": 63,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 32,
+      "requirements": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "UK317",
+      "airline": "Vistara",
+      "category": "medium",
+      "arrival": 8,
+      "departure": 56,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 32,
+      "requirements": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "AI330",
+      "airline": "Air India",
+      "category": "heavy",
+      "arrival": 9,
+      "departure": 52,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 64,
+      "requirements": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "6E343",
+      "airline": "IndiGo",
+      "category": "medium",
+      "arrival": 10,
+      "departure": 77,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 32,
+      "requirements": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "EK356",
+      "airline": "Emirates",
+      "category": "medium",
+      "arrival": 11,
+      "departure": 73,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 64,
+      "requirements": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "SQ369",
+      "airline": "Singapore Airlines",
+      "category": "medium",
+      "arrival": 12,
+      "departure": 52,
+      "burst": 3,
+      "priority": 1,
+      "emergency": false,
+      "memory": 96,
+      "requirements": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "faults": []
+}

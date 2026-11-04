@@ -1,0 +1,24 @@
+{
+  "algorithm": "fcfs",
+  "flights": [
+    {
+      "id": "P0",
+      "arrival": 0,
+      "burst": 8,
+      "priority": 3
+    },
+    {
+      "id": "P1",
+      "arrival": 1,
+      "burst": 4,
+      "priority": 1
+    },
+    {
+      "id": "P2",
+      "arrival": 2,
+      "burst": 2,
+      "priority": 2
+    }
+  ],
+  "quantum": 2
+}

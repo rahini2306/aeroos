@@ -1,0 +1,5 @@
+{
+  "mode": "mutex",
+  "threads": 4,
+  "iterations": 20
+}

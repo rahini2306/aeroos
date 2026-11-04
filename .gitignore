@@ -1,0 +1,15 @@
+.venv/
+frontend/node_modules/
+__pycache__/
+*.sqlite3*
+*.log
+.DS_Store
+core/aeroos
+core/aeroos-sanitize
+
+.pnpm-store/
+*.dSYM/
+
+/frontend/dist/
+/reports/
+.env

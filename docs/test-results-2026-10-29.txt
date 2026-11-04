@@ -1,0 +1,184 @@
+clang -std=c17 -O2 -Wall -Wextra -Wpedantic -Iinclude src/banker.c src/flight.c src/json.c src/main.c src/memory_manager.c src/model_checker.c src/resource_manager.c src/scheduler.c src/synchronization.c -pthread -o aeroos
+clang -std=c17 -O2 -Wall -Wextra -Wpedantic -Iinclude ../tests/test_resources.c src/resource_manager.c src/flight.c src/json.c -o /tmp/aeroos-test-resources
+/tmp/aeroos-test-resources
+C resource ownership, capacity, memory, and compatibility assertions passed
+test_battle_and_experiment (test_api.API.test_battle_and_experiment) ... ok
+test_end_to_end_persistence_reports_replay (test_api.API.test_end_to_end_persistence_reports_replay) ... ok
+test_fractional_and_malformed_lab_values_are_rejected (test_api.API.test_fractional_and_malformed_lab_values_are_rejected) ... ok
+test_lab_and_bootstrap (test_api.API.test_lab_and_bootstrap) ... ok
+test_model_checker_api_and_archived_evidence (test_api.API.test_model_checker_api_and_archived_evidence) ... ok
+test_validation_and_origin (test_api.API.test_validation_and_origin) ... ok
+test_deadlock_and_recovery (test_engine.BankerDeadlock.test_deadlock_and_recovery) ... ok
+test_invalid_request (test_engine.BankerDeadlock.test_invalid_request) ... ok
+test_multiinstance_cycle_not_deadlock (test_engine.BankerDeadlock.test_multiinstance_cycle_not_deadlock) ... ok
+test_rollback_and_normal_mode (test_engine.BankerDeadlock.test_rollback_and_normal_mode) ... ok
+test_safe_grant (test_engine.BankerDeadlock.test_safe_grant) ... ok
+test_safe_sequence (test_engine.BankerDeadlock.test_safe_sequence) ... ok
+test_compaction_swap_fragmentation (test_engine.Memory.test_compaction_swap_fragmentation) ... ok
+test_contiguous_policies (test_engine.Memory.test_contiguous_policies) ... ok
+test_duplicate_owner_and_oversized (test_engine.Memory.test_duplicate_owner_and_oversized) ... ok
+test_internal_fragmentation (test_engine.Memory.test_internal_fragmentation) ... ok
+test_next_fit_cursor_inside_coalesced_hole (test_engine.Memory.test_next_fit_cursor_inside_coalesced_hole) ... ok
+test_replacement_faults (test_engine.Memory.test_replacement_faults) ... ok
+test_translation (test_engine.Memory.test_translation) ... ok
+test_all_builtin_replay (test_engine.Resources.test_all_builtin_replay) ... ok
+test_cancellation_releases_only_owned_resources (test_engine.Resources.test_cancellation_releases_only_owned_resources) ... ok
+test_closure_preserves_owner (test_engine.Resources.test_closure_preserves_owner) ... ok
+test_fault_events_and_actual_decision_alternatives (test_engine.Resources.test_fault_events_and_actual_decision_alternatives) ... ok
+test_incompatible_and_insufficient (test_engine.Resources.test_incompatible_and_insufficient) ... ok
+test_nonpreemptive_context (test_engine.Resources.test_nonpreemptive_context) ... ok
+test_ownership_capacity_and_release (test_engine.Resources.test_ownership_capacity_and_release) ... ok
+test_aging_changes_priority (test_engine.Scheduling.test_aging_changes_priority) ... ok
+test_exact_transition_replay (test_engine.Scheduling.test_exact_transition_replay) ... ok
+test_fcfs_known_metrics (test_engine.Scheduling.test_fcfs_known_metrics) ... ok
+test_hrrn (test_engine.Scheduling.test_hrrn) ... ok
+test_idle (test_engine.Scheduling.test_idle) ... ok
+test_mlfq_feedback_and_fifo (test_engine.Scheduling.test_mlfq_feedback_and_fifo) ... ok
+test_mlq_and_mlfq (test_engine.Scheduling.test_mlq_and_mlfq) ... ok
+test_priority (test_engine.Scheduling.test_priority) ... ok
+test_randomized_invariants_and_determinism (test_engine.Scheduling.test_randomized_invariants_and_determinism) ... ok
+test_round_robin (test_engine.Scheduling.test_round_robin) ... ok
+test_sjf (test_engine.Scheduling.test_sjf) ... ok
+test_srtf (test_engine.Scheduling.test_srtf) ... ok
+test_real_thread_labs (test_engine.Synchronization.test_real_thread_labs) ... ok
+test_validation (test_engine.Synchronization.test_validation) ... ok
+test_completed_trace_releases_every_resource (test_verifier.ModelChecker.test_completed_trace_releases_every_resource) ... ok
+test_invalid_claims_and_bounds (test_verifier.ModelChecker.test_invalid_claims_and_bounds) ... ok
+test_limit_is_never_a_safety_proof (test_verifier.ModelChecker.test_limit_is_never_a_safety_proof) ... ok
+test_more_instances_remove_deadlock (test_verifier.ModelChecker.test_more_instances_remove_deadlock) ... ok
+test_noncyclic_order_is_verified (test_verifier.ModelChecker.test_noncyclic_order_is_verified) ... ok
+test_random_models_match_independent_oracle (test_verifier.ModelChecker.test_random_models_match_independent_oracle) ... ok
+test_repeatability (test_verifier.ModelChecker.test_repeatability) ... ok
+test_three_process_shortest_counterexample_and_shield (test_verifier.ModelChecker.test_three_process_shortest_counterexample_and_shield) ... ok
+test_two_process_trace_is_executable (test_verifier.ModelChecker.test_two_process_trace_is_executable) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 1.511s
+
+OK
+vite v6.4.4 building for production...
+transforming...
+✓ 1588 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.42 kB │ gzip:  0.30 kB
+dist/assets/index-Bv0SM-Qc.css   46.48 kB │ gzip: 11.37 kB
+dist/assets/index-B8srXsvh.js   288.07 kB │ gzip: 88.24 kB
+✓ built in 722ms
+clang -std=c17 -g -O1 -fsanitize=address,undefined -fno-omit-frame-pointer -Iinclude src/banker.c src/flight.c src/json.c src/main.c src/memory_manager.c src/model_checker.c src/resource_manager.c src/scheduler.c src/synchronization.c -pthread -o aeroos-sanitize
+test_deadlock_and_recovery (test_engine.BankerDeadlock.test_deadlock_and_recovery) ... ok
+test_invalid_request (test_engine.BankerDeadlock.test_invalid_request) ... ok
+test_multiinstance_cycle_not_deadlock (test_engine.BankerDeadlock.test_multiinstance_cycle_not_deadlock) ... ok
+test_rollback_and_normal_mode (test_engine.BankerDeadlock.test_rollback_and_normal_mode) ... ok
+test_safe_grant (test_engine.BankerDeadlock.test_safe_grant) ... ok
+test_safe_sequence (test_engine.BankerDeadlock.test_safe_sequence) ... ok
+test_compaction_swap_fragmentation (test_engine.Memory.test_compaction_swap_fragmentation) ... ok
+test_contiguous_policies (test_engine.Memory.test_contiguous_policies) ... ok
+test_duplicate_owner_and_oversized (test_engine.Memory.test_duplicate_owner_and_oversized) ... ok
+test_internal_fragmentation (test_engine.Memory.test_internal_fragmentation) ... ok
+test_next_fit_cursor_inside_coalesced_hole (test_engine.Memory.test_next_fit_cursor_inside_coalesced_hole) ... ok
+test_replacement_faults (test_engine.Memory.test_replacement_faults) ... ok
+test_translation (test_engine.Memory.test_translation) ... ok
+test_all_builtin_replay (test_engine.Resources.test_all_builtin_replay) ... ok
+test_cancellation_releases_only_owned_resources (test_engine.Resources.test_cancellation_releases_only_owned_resources) ... ok
+test_closure_preserves_owner (test_engine.Resources.test_closure_preserves_owner) ... ok
+test_fault_events_and_actual_decision_alternatives (test_engine.Resources.test_fault_events_and_actual_decision_alternatives) ... ok
+test_incompatible_and_insufficient (test_engine.Resources.test_incompatible_and_insufficient) ... ok
+test_nonpreemptive_context (test_engine.Resources.test_nonpreemptive_context) ... ok
+test_ownership_capacity_and_release (test_engine.Resources.test_ownership_capacity_and_release) ... ok
+test_aging_changes_priority (test_engine.Scheduling.test_aging_changes_priority) ... ok
+test_exact_transition_replay (test_engine.Scheduling.test_exact_transition_replay) ... ok
+test_fcfs_known_metrics (test_engine.Scheduling.test_fcfs_known_metrics) ... ok
+test_hrrn (test_engine.Scheduling.test_hrrn) ... ok
+test_idle (test_engine.Scheduling.test_idle) ... ok
+test_mlfq_feedback_and_fifo (test_engine.Scheduling.test_mlfq_feedback_and_fifo) ... ok
+test_mlq_and_mlfq (test_engine.Scheduling.test_mlq_and_mlfq) ... ok
+test_priority (test_engine.Scheduling.test_priority) ... ok
+test_randomized_invariants_and_determinism (test_engine.Scheduling.test_randomized_invariants_and_determinism) ... ok
+test_round_robin (test_engine.Scheduling.test_round_robin) ... ok
+test_sjf (test_engine.Scheduling.test_sjf) ... ok
+test_srtf (test_engine.Scheduling.test_srtf) ... ok
+test_real_thread_labs (test_engine.Synchronization.test_real_thread_labs) ... ok
+test_validation (test_engine.Synchronization.test_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 2.590s
+
+OK
+test_completed_trace_releases_every_resource (test_verifier.ModelChecker.test_completed_trace_releases_every_resource) ... ok
+test_invalid_claims_and_bounds (test_verifier.ModelChecker.test_invalid_claims_and_bounds) ... ok
+test_limit_is_never_a_safety_proof (test_verifier.ModelChecker.test_limit_is_never_a_safety_proof) ... ok
+test_more_instances_remove_deadlock (test_verifier.ModelChecker.test_more_instances_remove_deadlock) ... ok
+test_noncyclic_order_is_verified (test_verifier.ModelChecker.test_noncyclic_order_is_verified) ... ok
+test_random_models_match_independent_oracle (test_verifier.ModelChecker.test_random_models_match_independent_oracle) ... ok
+test_repeatability (test_verifier.ModelChecker.test_repeatability) ... ok
+test_three_process_shortest_counterexample_and_shield (test_verifier.ModelChecker.test_three_process_shortest_counterexample_and_shield) ... ok
+test_two_process_trace_is_executable (test_verifier.ModelChecker.test_two_process_trace_is_executable) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.465s
+
+OK
+vite v6.4.4 building for production...
+transforming...
+✓ 1588 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.42 kB │ gzip:  0.30 kB
+dist/assets/index-Bv0SM-Qc.css   46.48 kB │ gzip: 11.37 kB
+dist/assets/index-B8srXsvh.js   288.07 kB │ gzip: 88.24 kB
+✓ built in 856ms
+test_battle_and_experiment (test_api.API.test_battle_and_experiment) ... ok
+test_end_to_end_persistence_reports_replay (test_api.API.test_end_to_end_persistence_reports_replay) ... ok
+test_fractional_and_malformed_lab_values_are_rejected (test_api.API.test_fractional_and_malformed_lab_values_are_rejected) ... ok
+test_lab_and_bootstrap (test_api.API.test_lab_and_bootstrap) ... ok
+test_model_checker_api_and_archived_evidence (test_api.API.test_model_checker_api_and_archived_evidence) ... ok
+test_validation_and_origin (test_api.API.test_validation_and_origin) ... ok
+test_deadlock_and_recovery (test_engine.BankerDeadlock.test_deadlock_and_recovery) ... ok
+test_invalid_request (test_engine.BankerDeadlock.test_invalid_request) ... ok
+test_multiinstance_cycle_not_deadlock (test_engine.BankerDeadlock.test_multiinstance_cycle_not_deadlock) ... ok
+test_rollback_and_normal_mode (test_engine.BankerDeadlock.test_rollback_and_normal_mode) ... ok
+test_safe_grant (test_engine.BankerDeadlock.test_safe_grant) ... ok
+test_safe_sequence (test_engine.BankerDeadlock.test_safe_sequence) ... ok
+test_compaction_swap_fragmentation (test_engine.Memory.test_compaction_swap_fragmentation) ... ok
+test_contiguous_policies (test_engine.Memory.test_contiguous_policies) ... ok
+test_duplicate_owner_and_oversized (test_engine.Memory.test_duplicate_owner_and_oversized) ... ok
+test_internal_fragmentation (test_engine.Memory.test_internal_fragmentation) ... ok
+test_next_fit_cursor_inside_coalesced_hole (test_engine.Memory.test_next_fit_cursor_inside_coalesced_hole) ... ok
+test_replacement_faults (test_engine.Memory.test_replacement_faults) ... ok
+test_translation (test_engine.Memory.test_translation) ... ok
+test_all_builtin_replay (test_engine.Resources.test_all_builtin_replay) ... ok
+test_cancellation_releases_only_owned_resources (test_engine.Resources.test_cancellation_releases_only_owned_resources) ... ok
+test_closure_preserves_owner (test_engine.Resources.test_closure_preserves_owner) ... ok
+test_fault_events_and_actual_decision_alternatives (test_engine.Resources.test_fault_events_and_actual_decision_alternatives) ... ok
+test_incompatible_and_insufficient (test_engine.Resources.test_incompatible_and_insufficient) ... ok
+test_nonpreemptive_context (test_engine.Resources.test_nonpreemptive_context) ... ok
+test_ownership_capacity_and_release (test_engine.Resources.test_ownership_capacity_and_release) ... ok
+test_aging_changes_priority (test_engine.Scheduling.test_aging_changes_priority) ... ok
+test_exact_transition_replay (test_engine.Scheduling.test_exact_transition_replay) ... ok
+test_fcfs_known_metrics (test_engine.Scheduling.test_fcfs_known_metrics) ... ok
+test_hrrn (test_engine.Scheduling.test_hrrn) ... ok
+test_idle (test_engine.Scheduling.test_idle) ... ok
+test_mlfq_feedback_and_fifo (test_engine.Scheduling.test_mlfq_feedback_and_fifo) ... ok
+test_mlq_and_mlfq (test_engine.Scheduling.test_mlq_and_mlfq) ... ok
+test_priority (test_engine.Scheduling.test_priority) ... ok
+test_randomized_invariants_and_determinism (test_engine.Scheduling.test_randomized_invariants_and_determinism) ... ok
+test_round_robin (test_engine.Scheduling.test_round_robin) ... ok
+test_sjf (test_engine.Scheduling.test_sjf) ... ok
+test_srtf (test_engine.Scheduling.test_srtf) ... ok
+test_real_thread_labs (test_engine.Synchronization.test_real_thread_labs) ... ok
+test_validation (test_engine.Synchronization.test_validation) ... ok
+test_completed_trace_releases_every_resource (test_verifier.ModelChecker.test_completed_trace_releases_every_resource) ... ok
+test_invalid_claims_and_bounds (test_verifier.ModelChecker.test_invalid_claims_and_bounds) ... ok
+test_limit_is_never_a_safety_proof (test_verifier.ModelChecker.test_limit_is_never_a_safety_proof) ... ok
+test_more_instances_remove_deadlock (test_verifier.ModelChecker.test_more_instances_remove_deadlock) ... ok
+test_noncyclic_order_is_verified (test_verifier.ModelChecker.test_noncyclic_order_is_verified) ... ok
+test_random_models_match_independent_oracle (test_verifier.ModelChecker.test_random_models_match_independent_oracle) ... ok
+test_repeatability (test_verifier.ModelChecker.test_repeatability) ... ok
+test_three_process_shortest_counterexample_and_shield (test_verifier.ModelChecker.test_three_process_shortest_counterexample_and_shield) ... ok
+test_two_process_trace_is_executable (test_verifier.ModelChecker.test_two_process_trace_is_executable) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.482s
+
+OK

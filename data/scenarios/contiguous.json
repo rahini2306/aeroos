@@ -1,0 +1,27 @@
+{
+  "mode": "contiguous",
+  "algorithm": "first",
+  "size": 1024,
+  "operations": [
+    {
+      "process": 0,
+      "size": 180
+    },
+    {
+      "process": 1,
+      "size": 220
+    },
+    {
+      "process": 2,
+      "size": 100
+    },
+    {
+      "action": "free",
+      "process": 1
+    },
+    {
+      "process": 3,
+      "size": 150
+    }
+  ]
+}
